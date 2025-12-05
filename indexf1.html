@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry Hub</title>
+    <link rel="stylesheet" href="./stylesf1.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Fixed Header -->
+    <header>
+        <div class="logo">
+            <img src="./i1.jpeg" alt="Logo">
+            <span>Poetry Hub</span>
+        </div>
+
+       <!-- Left Sidebar (Header Section) -->
+    <header class="left-sidebar">
+        <!-- Menu Icon -->
+        <div class="menu-icon" onclick="openMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        <!-- Clock inside Sidebar -->
+        <div class="clock" id="clock">Loading...</div>
+
+        <!-- Social Icons at Bottom -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100092847984969&mibextid=JRoKGi" target="_blank">FB</a>
+            <a href="https://www.instagram.com/kashyap_shrawan108?igsh=MXNvOWl2YXFvZmg0bA==" target="_blank">IG</a>
+            <a href="https://youtube.com/@shrawan_kumar_jha?si=m4vxa2Z1xx8mEvnZ" target="_blank">YT</a>
+        </div>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <nav class="sidebar-menu" id="sidebar">
+        <span class="close-btn" onclick="closeMenu()">✖</span>
+        <a href="./index.html">Home</a>
+        <a href="./aboutme.html">About</a>
+        <a href="./contactme.html">Contact</a>
+    </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>शब्दों की दुनिया में आपका स्वागत है!</h1>
+        <p>यहाँ आप दिल को छू लेने वाली कविताएँ, कहानियाँ और भावनाओं से भरी रचनाएँ पा सकते हैं।  
+           अपनी कविताएँ साझा करने के लिए हमसे संपर्क करें!</p>
+    </section>
+   
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="card" onclick="redirectTo('./page1.html')">
+                <img src="./me4.jpeg" alt="Card Image 1">
+                <h3 style="color: black;font-weight: bolder;">श्रवन कुमार झा</h3>
+                <p>"मेरे शब्दों से देखो दुनिया कैसी दिखती है"</p>
+            </div>
+            <!-- <div class="card" onclick="redirectTo('#')">
+                <img src="#" alt="Card Image 3">
+                <h3 style="color: black;font-weight: bolder;">ज्योति दिनकर</h3>
+                <p>"मेरे शब्दों को उस दुनिया की खिड़की बनने दो जिसे तुमने पहले कभी नहीं देखा"</p>
+            </div> -->
+            <div class="card" onclick="redirectTo('./page2.html')">
+                <img src="./rau.jpeg" alt="Card Image 2">
+                <h3 style="color: black;font-weight: bolder;">रौशन कुमार</h3>
+                <p>"कविता के माध्यम से मेरे कुछ विचार"</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p style="margin-bottom: 10px;"><a href="./contactme.html">Contact</a></p>
+        <p style="font-size: 12px; font-weight: bold;">&copy; All Rights Reserved to Poetry Hub.</p>
+        <p style="font-size: 12px; font-weight: bold;">Maintained by: Shrawan Kumar Jha</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Full-Page Background Image */
+body {
+    background: url('./first.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Dark Overlay for Readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+/* Navigation Menu */
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* Social Icons */
+.social-icons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Hide menu by default on mobile */
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.8);
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
