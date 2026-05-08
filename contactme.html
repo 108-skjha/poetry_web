@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Shrawan Kumar Jha</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: #222;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin: 15px 0;
+        }
+
+        .contact-info a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .email {
+            background: #0073b1;
+            border: 1px solid #0073b1;
+        }
+
+        .email:hover {
+            background: white;
+            color: #0073b1;
+        }
+
+        .linkedin {
+            background: #0077b5;
+            border: 1px solid #0077b5;
+        }
+
+        .linkedin:hover {
+            background: white;
+            color: #0077b5;
+        }
+
+        .whatsapp {
+            background: #25D366;
+            border: 1px solid #25D366;
+        }
+
+        .whatsapp:hover {
+            background: white;
+            color: #25D366;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .contact-info a {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>मुझसे संपर्क करें</h1>
+        <p>कृपया मुझे ईमेल,लिंकडिन या वाट्सएप के माध्यम से संपर्क करें</p>
+        
+        <div class="contact-info">
+            <a href="mailto:shrawanjha2004@gmail.com" class="email">📧 मुझे ईमेल करें</a>
+        </div>
+
+        <div class="contact-info">
+            <a href="https://www.linkedin.com/in/shrawan-kumar-jha-92b3342b3" target="_blank" class="linkedin">🔗 मेरे लिंकडिन पर जाएँ</a>
+        </div>
+
+        <div class="contact-info">
+            <a href="https://wa.me/7782978429" target="_blank" class="whatsapp">📱 व्हाट्सएप पर चैट करें</a>
+        </div>
+    </div>
+
+</body>
+</html>

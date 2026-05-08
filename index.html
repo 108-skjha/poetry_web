@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry hub</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">POETRY HUB</div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./aboutme.html">ABOUT</a></li>
+                <li><a href="./contactme.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <section class="hero">
+        <h1 style="font-size: 30px;">Poetry hub is famous for sharing beautiful and heartfelt poetry.</h1>
+        <p style="margin-top: 25px;">Make your favorite poetry always accessible on your device with our website.</p>
+        <a href="./indexf1.html" class="btn">Click me</a>
+    </section>
+
+    <div class="social-icons">
+        <a href="#">Follow us</a>
+        <a href="https://www.facebook.com/profile.php?id=100092847984969&mibextid=JRoKGi">📘 Facebook</a>
+        <a href="https://www.instagram.com/kashyap_shrawan108?igsh=MXNvOWl2YXFvZmg0bA==">📷 Instagram</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("nav-menu");
+            if (nav.style.display === "flex") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "flex";
+                nav.style.flexDirection = "column"; /* Ensure it stacks on mobile */
+            }
+        }
+    </script>
+
+</body>
+</html>
